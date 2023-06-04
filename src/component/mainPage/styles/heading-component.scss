@@ -1,0 +1,94 @@
+.heading {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  .logo-search-component {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    .logo-component {
+      width: 6%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+    .search-component {
+      display: flex;
+      width: 240px;
+      padding: 10px 20px;
+      background-color: rgba(250, 250, 250, 1);
+      border-radius: 20px;
+      display: flex;
+      .search-icon {
+        flex: 0 0 20%;
+        font-size: 24px !important;
+        cursor: pointer;
+      }
+      .search-text {
+        flex: 0 0 80%;
+        display: flex;
+        align-items: center;
+        input {
+          font-size: 16px !important;
+          border: none;
+          background-color: rgba(250, 250, 250, 1);
+        }
+        input:focus {
+          background-color: rgba(250, 250, 250, 1);
+          outline: none !important;
+        }
+      }
+    }
+  }
+  .write-story-component {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    .icon {
+      font-size: 24px !important;
+    }
+    .text {
+      margin-left: 5px;
+      font-size: 20px;
+    }
+  }
+  .alert-component {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .account-component {
+    width: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .icon {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+}
