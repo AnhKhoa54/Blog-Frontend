@@ -1,0 +1,15 @@
+@import 'topic-followed-component';
+.body {
+  margin: 0 15%;
+  height: 100%;
+  display: flex;
+  .main-content {
+    width: 70%;
+    padding: 10px 0;
+    height: 100%;
+  }
+  .sub-content {
+    width: 30%;
+    height: 100%;
+  }
+}
