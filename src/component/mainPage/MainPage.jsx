@@ -8,7 +8,6 @@ function MainPage() {
     <div className='main-page-component'>
       <HeadingComponent />
       <BodyComponent />
-      <div className='body'></div>
     </div>
   )
 }
