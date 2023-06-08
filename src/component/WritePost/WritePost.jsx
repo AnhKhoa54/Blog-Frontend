@@ -2,9 +2,9 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import HeadingComponent from './HeadingComponent'
 import BodyComponent from './BodyComponent'
-import './styles/main-page.scss'
+import './styles/write-post.scss'
 
-function MainPage() {
+function WritePost() {
   const navigate = useNavigate()
   const navigateHome = () => {
     navigate('/')
@@ -13,11 +13,10 @@ function MainPage() {
     navigate('/new-story')
   }
   return (
-    <div className='main-page-component'>
+    <div className='write-post'>
       <HeadingComponent navigateHome={navigateHome} navigateWritePage={navigateWritePage} />
       <BodyComponent />
     </div>
   )
 }
-
-export default MainPage
+export default WritePost

@@ -1,0 +1,59 @@
+.heading-write-page {
+  height: 8%;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  margin: 0 15%;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  .logo-component {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    .logo {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+  }
+  .other-component {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    .publish-component {
+      width: 70px;
+      height: 25px;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .expand-component {
+      cursor: pointer;
+    }
+    .alert-component {
+      cursor: pointer;
+    }
+    .acount-component {
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      cursor: pointer;
+    }
+  }
+}

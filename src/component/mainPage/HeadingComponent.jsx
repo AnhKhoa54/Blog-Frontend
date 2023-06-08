@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-import './styles/heading-component.scss'
+import './styles/heading-main-page-component.scss'
 
-function HeadingComponent() {
+function HeadingComponent(props) {
+  const { navigateHome, navigateWritePage } = props
   return (
-    <div className='heading'>
+    <div className='heading-main-page'>
       <div className='logo-search-component'>
-        <div className='logo-component'>
+        <div className='logo-component' onClick={navigateHome} aria-hidden='true'>
           <img src='/medium-logo.png' alt='' />
         </div>
         <div className='search-component'>
@@ -17,7 +19,7 @@ function HeadingComponent() {
           </div>
         </div>
       </div>
-      <div className='write-story-component tag-text'>
+      <div className='write-story-component tag-text' onClick={navigateWritePage} aria-hidden='true'>
         <div className='icon'>
           <i className='fal fa-edit'></i>
         </div>
