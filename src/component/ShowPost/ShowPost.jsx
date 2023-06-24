@@ -2,9 +2,9 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import HeadingComponent from '../Share/HeadingComponent'
 import BodyComponent from './BodyComponent'
-import './styles/main-page.scss'
+import './styles/show-post.scss'
 
-function MainPage() {
+function ShowPost() {
   const navigate = useNavigate()
   const navigateHome = () => {
     navigate('/')
@@ -13,11 +13,11 @@ function MainPage() {
     navigate('/new-story')
   }
   return (
-    <div className='main-page-component'>
+    <div className='show-post-page-component'>
       <HeadingComponent navigateHome={navigateHome} navigateWritePage={navigateWritePage} />
       <BodyComponent />
     </div>
   )
 }
 
-export default MainPage
+export default ShowPost

@@ -13,9 +13,8 @@ const modules = {
     ['link', 'image', 'video']
   ]
 }
-function BodyComponent() {
-  const [value, setValue] = useState('')
-
+function BodyComponent(props) {
+  const { value, setValue } = props
   return (
     <div className='body-write-page'>
       <ReactQuill theme='snow' value={value} onChange={setValue} modules={modules} className='write-page-input' />

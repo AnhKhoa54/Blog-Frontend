@@ -3,7 +3,7 @@ import React from 'react'
 import './styles/heading-write-page-component.scss'
 
 function HeadingComponent(props) {
-  const { navigateHome } = props
+  const { navigateHome, getValueContext } = props
   return (
     <div className='heading-write-page'>
       <div className='logo-component'>
@@ -13,7 +13,7 @@ function HeadingComponent(props) {
         <div className='text tag-text'>Draf in Anh Khoa Vu</div>
         <div className='text tag-text'>Saved</div>
       </div>
-      <div className='other-component'>
+      <div className='other-component' onClick={getValueContext} aria-hidden='true'>
         <div className='publish-component tag-text'>publish</div>
         <div className='expand-component tag-text'>
           <i className='fas fa-ellipsis-h'></i>
