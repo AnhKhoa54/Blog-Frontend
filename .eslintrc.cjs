@@ -50,6 +50,8 @@ module.exports = {
         printWidth: 120,
         jsxSingleQuote: true
       }
-    ]
+    ],
+    // Tắt rule yêu cầu prop type
+    'react/prop-types': 'off'
   }
 }
