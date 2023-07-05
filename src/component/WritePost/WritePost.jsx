@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import HeadingComponent from './HeadingComponent'
 import BodyComponent from './BodyComponent'
 import './styles/write-post.scss'
+import axios from 'axios'
 
 function WritePost() {
   const navigate = useNavigate()
@@ -17,6 +18,23 @@ function WritePost() {
 
   const getValueContext = () => {
     console.log('ANHKHOA', value)
+    axios
+      .post(
+        'http://35.213.144.20:3000/post/posting',
+        {
+          'post-title': 'Vu Anh Khoa',
+          'post-status': 'publish',
+          'post-permit': 'private',
+          'post-category': 'tech',
+          'post-content': value
+        },
+        {
+          headers: { 'x-client-id': 'a2997563-126c-11ee-bd2d-0242ac140002' }
+        }
+      )
+      .then((response) => {
+        console.log('ANHKHOA res', response)
+      })
   }
   return (
     <div className='write-post'>
